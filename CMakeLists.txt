@@ -1,6 +1,9 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/data)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
+
 add_executable(linked_hashmap_one ${CMAKE_CURRENT_SOURCE_DIR}/data/testone/1.cpp)
 add_executable(linked_hashmap_two ${CMAKE_CURRENT_SOURCE_DIR}/data/testtwo/3.cpp)
 add_executable(linked_hashmap_three ${CMAKE_CURRENT_SOURCE_DIR}/data/testthree/5.cpp)
